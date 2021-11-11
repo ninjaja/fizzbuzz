@@ -12,17 +12,15 @@ import java.util.Map;
 
 public class Main {
 
-    public static final Logger LOGGER = LogManager.getLogger(Main.class);
-
     public static void main(String[] args) {
-
 
         SimpleFizzerBuzzer fizzerBuzzer = new SimpleFizzerBuzzer();
         System.out.println(fizzerBuzzer.doFizzAndBuzzFromRange(1, 100));
 
         Map<Integer, String> inputMap = new HashMap<>();
-        inputMap.put(3, "Fizz");
-        inputMap.put(5, "Buzz");
+        inputMap.put(5, "Fuzz");
+        inputMap.put(4, "Buzz");
+        inputMap.put(2, "Fizz");
         System.out.println(fizzerBuzzer.doFizzAndBuzzFromMapAndRange(inputMap, 1, 100));
     }
 }
